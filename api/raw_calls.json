@@ -1,0 +1,61 @@
+{
+    "calls": {
+        "AAE": {
+            "body": "amount=<Amount (in cents)>&currency=<Currency Code>&source=<Card token>&description=<Description>&capture=<Capture Now?>&statement_descriptor=<Statement Descriptor>",
+            "body_params": {
+                "AAF": {
+                    "key": "Amount (in cents)",
+                    "private": true,
+                    "value": "100"
+                },
+                "AAG": {
+                    "key": "Currency Code",
+                    "private": true,
+                    "value": "usd"
+                },
+                "AAH": {
+                    "key": "Card token",
+                    "private": true,
+                    "value": "tok_visa"
+                },
+                "AAI": {
+                    "key": "Description",
+                    "private": true,
+                    "value": ""
+                },
+                "AAJ": {
+                    "key": "Capture Now?",
+                    "private": true,
+                    "value": "true"
+                },
+                "AAK": {
+                    "key": "Statement Descriptor",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Charge payment",
+            "publish_as": "action",
+            "rank": 0,
+            "ret_value": "api.1535376517025x539759310536704000.plugin_api.AAE",
+            "types": "{\"plugin_api.AAE\":{\"caption\":\"Charge payment\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"path\":[\"id\"]},\"_p_object\":{\"ret_value\":\"text\",\"caption\":\"object\",\"path\":[\"object\"]},\"_p_amount\":{\"ret_value\":\"number\",\"caption\":\"amount\",\"path\":[\"amount\"]},\"_p_amount_refunded\":{\"ret_value\":\"number\",\"caption\":\"amount_refunded\",\"path\":[\"amount_refunded\"]},\"_p_application\":{\"ret_value\":\"text\",\"caption\":\"application\",\"path\":[\"application\"]},\"_p_application_fee\":{\"ret_value\":\"text\",\"caption\":\"application_fee\",\"path\":[\"application_fee\"]},\"_p_balance_transaction\":{\"ret_value\":\"text\",\"caption\":\"balance_transaction\",\"path\":[\"balance_transaction\"]},\"_p_captured\":{\"ret_value\":\"boolean\",\"caption\":\"captured\",\"path\":[\"captured\"]},\"_p_created\":{\"ret_value\":\"number\",\"caption\":\"created\",\"path\":[\"created\"]},\"_p_currency\":{\"ret_value\":\"text\",\"caption\":\"currency\",\"path\":[\"currency\"]},\"_p_customer\":{\"ret_value\":\"text\",\"caption\":\"customer\",\"path\":[\"customer\"]},\"_p_description\":{\"ret_value\":\"text\",\"caption\":\"description\",\"path\":[\"description\"]},\"_p_destination\":{\"ret_value\":\"text\",\"caption\":\"destination\",\"path\":[\"destination\"]},\"_p_dispute\":{\"ret_value\":\"text\",\"caption\":\"dispute\",\"path\":[\"dispute\"]},\"_p_failure_code\":{\"ret_value\":\"text\",\"caption\":\"failure_code\",\"path\":[\"failure_code\"]},\"_p_failure_message\":{\"ret_value\":\"text\",\"caption\":\"failure_message\",\"path\":[\"failure_message\"]},\"_p_invoice\":{\"ret_value\":\"text\",\"caption\":\"invoice\",\"path\":[\"invoice\"]},\"_p_livemode\":{\"ret_value\":\"boolean\",\"caption\":\"livemode\",\"path\":[\"livemode\"]},\"_p_on_behalf_of\":{\"ret_value\":\"text\",\"caption\":\"on_behalf_of\",\"path\":[\"on_behalf_of\"]},\"_p_order\":{\"ret_value\":\"text\",\"caption\":\"order\",\"path\":[\"order\"]},\"_p_outcome.network_status\":{\"ret_value\":\"text\",\"caption\":\"outcome network_status\",\"path\":[\"outcome\",\"network_status\"]},\"_p_outcome.reason\":{\"ret_value\":\"text\",\"caption\":\"outcome reason\",\"path\":[\"outcome\",\"reason\"]},\"_p_outcome.risk_level\":{\"ret_value\":\"text\",\"caption\":\"outcome risk_level\",\"path\":[\"outcome\",\"risk_level\"]},\"_p_outcome.seller_message\":{\"ret_value\":\"text\",\"caption\":\"outcome seller_message\",\"path\":[\"outcome\",\"seller_message\"]},\"_p_outcome.type\":{\"ret_value\":\"text\",\"caption\":\"outcome type\",\"path\":[\"outcome\",\"type\"]},\"_p_paid\":{\"ret_value\":\"boolean\",\"caption\":\"paid\",\"path\":[\"paid\"]},\"_p_receipt_email\":{\"ret_value\":\"text\",\"caption\":\"receipt_email\",\"path\":[\"receipt_email\"]},\"_p_receipt_number\":{\"ret_value\":\"text\",\"caption\":\"receipt_number\",\"path\":[\"receipt_number\"]},\"_p_refunded\":{\"ret_value\":\"boolean\",\"caption\":\"refunded\",\"path\":[\"refunded\"]},\"_p_refunds.object\":{\"ret_value\":\"text\",\"caption\":\"refunds object\",\"path\":[\"refunds\",\"object\"]},\"_p_refunds.has_more\":{\"ret_value\":\"boolean\",\"caption\":\"refunds has_more\",\"path\":[\"refunds\",\"has_more\"]},\"_p_refunds.total_count\":{\"ret_value\":\"number\",\"caption\":\"refunds total_count\",\"path\":[\"refunds\",\"total_count\"]},\"_p_refunds.url\":{\"ret_value\":\"text\",\"caption\":\"refunds url\",\"path\":[\"refunds\",\"url\"]},\"_p_review\":{\"ret_value\":\"text\",\"caption\":\"review\",\"path\":[\"review\"]},\"_p_shipping\":{\"ret_value\":\"text\",\"caption\":\"shipping\",\"path\":[\"shipping\"]},\"_p_source.id\":{\"ret_value\":\"text\",\"caption\":\"source id\",\"path\":[\"source\",\"id\"]},\"_p_source.object\":{\"ret_value\":\"text\",\"caption\":\"source object\",\"path\":[\"source\",\"object\"]},\"_p_source.address_city\":{\"ret_value\":\"text\",\"caption\":\"source address_city\",\"path\":[\"source\",\"address_city\"]},\"_p_source.address_country\":{\"ret_value\":\"text\",\"caption\":\"source address_country\",\"path\":[\"source\",\"address_country\"]},\"_p_source.address_line1\":{\"ret_value\":\"text\",\"caption\":\"source address_line1\",\"path\":[\"source\",\"address_line1\"]},\"_p_source.address_line1_check\":{\"ret_value\":\"text\",\"caption\":\"source address_line1_check\",\"path\":[\"source\",\"address_line1_check\"]},\"_p_source.address_line2\":{\"ret_value\":\"text\",\"caption\":\"source address_line2\",\"path\":[\"source\",\"address_line2\"]},\"_p_source.address_state\":{\"ret_value\":\"text\",\"caption\":\"source address_state\",\"path\":[\"source\",\"address_state\"]},\"_p_source.address_zip\":{\"ret_value\":\"text\",\"caption\":\"source address_zip\",\"path\":[\"source\",\"address_zip\"]},\"_p_source.address_zip_check\":{\"ret_value\":\"text\",\"caption\":\"source address_zip_check\",\"path\":[\"source\",\"address_zip_check\"]},\"_p_source.brand\":{\"ret_value\":\"text\",\"caption\":\"source brand\",\"path\":[\"source\",\"brand\"]},\"_p_source.country\":{\"ret_value\":\"text\",\"caption\":\"source country\",\"path\":[\"source\",\"country\"]},\"_p_source.customer\":{\"ret_value\":\"text\",\"caption\":\"source customer\",\"path\":[\"source\",\"customer\"]},\"_p_source.cvc_check\":{\"ret_value\":\"text\",\"caption\":\"source cvc_check\",\"path\":[\"source\",\"cvc_check\"]},\"_p_source.dynamic_last4\":{\"ret_value\":\"text\",\"caption\":\"source dynamic_last4\",\"path\":[\"source\",\"dynamic_last4\"]},\"_p_source.exp_month\":{\"ret_value\":\"number\",\"caption\":\"source exp_month\",\"path\":[\"source\",\"exp_month\"]},\"_p_source.exp_year\":{\"ret_value\":\"number\",\"caption\":\"source exp_year\",\"path\":[\"source\",\"exp_year\"]},\"_p_source.fingerprint\":{\"ret_value\":\"text\",\"caption\":\"source fingerprint\",\"path\":[\"source\",\"fingerprint\"]},\"_p_source.funding\":{\"ret_value\":\"text\",\"caption\":\"source funding\",\"path\":[\"source\",\"funding\"]},\"_p_source.last4\":{\"ret_value\":\"text\",\"caption\":\"source last4\",\"path\":[\"source\",\"last4\"]},\"_p_source.name\":{\"ret_value\":\"text\",\"caption\":\"source name\",\"path\":[\"source\",\"name\"]},\"_p_source.tokenization_method\":{\"ret_value\":\"text\",\"caption\":\"source tokenization_method\",\"path\":[\"source\",\"tokenization_method\"]},\"_p_source_transfer\":{\"ret_value\":\"text\",\"caption\":\"source_transfer\",\"path\":[\"source_transfer\"]},\"_p_statement_descriptor\":{\"ret_value\":\"text\",\"caption\":\"statement_descriptor\",\"path\":[\"statement_descriptor\"]},\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"path\":[\"status\"]},\"_p_transfer_group\":{\"ret_value\":\"text\",\"caption\":\"transfer_group\",\"path\":[\"transfer_group\"]}}}}",
+            "url": "https://api.stripe.com/v1/charges"
+        }
+    },
+    "human": "Air Stripe",
+    "shared_headers": {
+        "AAC": {
+            "key": "Authorization",
+            "private": true,
+            "visibility": "secret"
+        },
+        "AAD": {
+            "key": "Content-Type",
+            "private": true,
+            "value": "application/x-www-form-urlencoded",
+            "visibility": "hidden"
+        }
+    }
+}

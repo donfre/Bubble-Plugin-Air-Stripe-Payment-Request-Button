@@ -1,0 +1,15 @@
+{
+    "caption": "complete payment",
+    "doc": "Call this to complete the payment to close the payment dialog",
+    "fields": {
+        "AAQ": {
+            "caption": "status",
+            "default_val": "success",
+            "editor": "Dropdown",
+            "name": "status",
+            "optional": false,
+            "options": "success,fail",
+            "rank": 0
+        }
+    }
+}

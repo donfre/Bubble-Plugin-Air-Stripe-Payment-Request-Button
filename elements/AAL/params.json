@@ -1,0 +1,129 @@
+{
+    "add_is_visible": true,
+    "category": "input forms",
+    "default_dim": {
+        "height": 40,
+        "width": 200
+    },
+    "display": "Air PaymentRequest",
+    "edit_mode_image": "//s3.amazonaws.com/appforest_uf/f1535303199157x246538279345259070/paynow.PNG",
+    "events": {
+        "AAO": {
+            "caption": "card token created",
+            "doc": "Called when a token is created.",
+            "name": "card_token_created"
+        }
+    },
+    "fields": {
+        "AAR": {
+            "caption": "Amount",
+            "default_val": 100,
+            "doc": "Amount",
+            "editor": "DynamicValue",
+            "name": "amount",
+            "rank": 0,
+            "value": "number"
+        },
+        "AAS": {
+            "caption": "Country",
+            "default_val": "US",
+            "doc": "The two-letter country code of your Stripe account (e.g., 'US')",
+            "editor": "DynamicValue",
+            "name": "country",
+            "rank": 1,
+            "value": "text"
+        },
+        "AAT": {
+            "caption": "Currency",
+            "default_val": "usd",
+            "doc": "Three character currency code (e.g., 'usd').",
+            "editor": "DynamicValue",
+            "name": "currency",
+            "rank": 2,
+            "value": "text"
+        },
+        "AAU": {
+            "caption": "Label",
+            "default_val": "Sales total",
+            "doc": "Label to display",
+            "editor": "DynamicValue",
+            "name": "label",
+            "rank": 3,
+            "value": "text"
+        },
+        "AAW": {
+            "caption": "Type of payment",
+            "default_val": "default",
+            "doc": "The type of the button.",
+            "editor": "Dropdown",
+            "name": "type",
+            "options": "default,donate,buy",
+            "rank": 4
+        },
+        "AAX": {
+            "caption": "Theme",
+            "default_val": "dark",
+            "doc": "Select the theme for the button.",
+            "editor": "Dropdown",
+            "name": "theme",
+            "options": "dark,light,light-outline",
+            "rank": 5
+        },
+        "AAY": {
+            "caption": "Name required?",
+            "default_val": true,
+            "doc": "Name required?",
+            "editor": "Checkbox",
+            "name": "payer_name",
+            "rank": 6
+        },
+        "AAZ": {
+            "caption": "Email required?",
+            "default_val": true,
+            "doc": "Email required?",
+            "editor": "Checkbox",
+            "name": "payer_email",
+            "rank": 7
+        },
+        "AAa": {
+            "caption": "Phone required?",
+            "default_val": false,
+            "doc": "Phone required?",
+            "editor": "Checkbox",
+            "name": "payer_phone",
+            "rank": 8
+        },
+        "AAb": {
+            "caption": "Height",
+            "default_val": "40px",
+            "editor": "Dropdown",
+            "name": "height",
+            "options": "10px,20px,30px,40px,50px,60px,70px,80px,90px,100px",
+            "rank": 9
+        }
+    },
+    "icon": "ion-card",
+    "property_applications": {
+        "resizable": true
+    },
+    "states": {
+        "AAM": {
+            "caption": "can make payment",
+            "doc": "Checks if the browser supports the payment request button",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "can_make_payment",
+            "value": "boolean"
+        },
+        "AAN": {
+            "caption": "card token",
+            "doc": "The return card token.",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "card_token",
+            "value": "text"
+        }
+    }
+}

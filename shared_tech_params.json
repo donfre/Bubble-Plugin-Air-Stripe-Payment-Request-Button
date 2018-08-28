@@ -1,0 +1,11 @@
+{
+    "dependencies": {
+        "use_jquery": true
+    },
+    "shared_keys": {
+        "AAV": {
+            "caption": "Stripe Publishable Key",
+            "type": "client_safe"
+        }
+    }
+}
